@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using System.Timers;
 using UnityEngine;
 
 /* 
@@ -63,8 +64,23 @@ namespace StrategyCamera {
         private Vector3 mouseRotateCurrentPosition;
         private bool rotateClickActive = false;
 
+        private Coroutine centerCamRoutine;
 
         #endregion Declaration
+
+        #region Singleton
+
+        public static CameraController instance;
+        private void Awake()
+        {
+            if (instance != null)
+            {
+                Debug.LogWarning("Multiple instances of " + this.name + " found.");
+            }
+            instance = this;
+        }
+
+        #endregion
 
 
         // Start is called before the first frame update
@@ -79,17 +95,31 @@ namespace StrategyCamera {
         void LateUpdate()
         {
             HandleAllCameraMovement();
+
+        }
+
+        public void CenterCamOnObj(Transform obj)
+        {
+            SnapCameraToObj(transform, obj);
+
         }
 
         void HandleAllCameraMovement()
         {
+
+            
             HandleKeyboardMovement();
             HandleKeyboardRotation();
             HandleKeyboardZoom();
             HandleMousePan();
             HandleMouseZoom();
             HandleMouseRotation();
-            
+
+            if (centerCamRoutine != null)
+            {
+                return;
+            }
+                
 
             // Location
             transform.position = Vector3.Lerp(transform.position, newPosition, Time.deltaTime * movementTime);
@@ -114,7 +144,7 @@ namespace StrategyCamera {
             cameraTransform.localPosition = Vector3.Lerp(cameraTransform.localPosition, newZoom, Time.deltaTime * movementTime);
         }
 
-
+        #region MouseMotions
         private void HandleMouseRotation()
         {
             if (Input.GetMouseButtonDown(2))
@@ -177,7 +207,9 @@ namespace StrategyCamera {
                 }
             }
         }
+        #endregion
 
+        #region KeyboardMotions
         private void HandleKeyboardZoom()
         {
             if (Input.GetKey(KeyCode.R))
@@ -244,6 +276,7 @@ namespace StrategyCamera {
             }
         }
 
+        #endregion
 
         private void SnapRotation(bool posOrNeg)
         {
@@ -259,8 +292,13 @@ namespace StrategyCamera {
             }
             
         }
+
+        private void SnapCameraToObj(Transform cam, Transform obj)
+        {
+            Vector3 toMove = new Vector3(obj.localPosition.x, 0, obj.localPosition.z);
+            newPosition = toMove;
+        }
+
     }
-
-
 
 }
