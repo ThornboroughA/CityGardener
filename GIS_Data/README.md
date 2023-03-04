@@ -1,4 +1,4 @@
-#GIS Data
+# GIS Data
 
 GIS data of the region of the game map. Original map data downloaded from [Earth Explorer](https://earthexplorer.usgs.gov/).
 - Ultra high-res data of southern Korea, from the SRTM 1 Arc-Second Global dataset.
