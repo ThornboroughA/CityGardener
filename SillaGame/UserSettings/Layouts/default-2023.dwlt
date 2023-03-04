@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 39
+  controlID: 100
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -344,7 +344,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 6ca70000
     m_LastClickedID: 42860
-    m_ExpandedIDs: 00000000a6790000a8790000aa790000ac790000ae790000b0790000b2790000
+    m_ExpandedIDs: 0000000090790000927900009479000096790000987900009a7900009c790000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -372,7 +372,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000a6790000a8790000aa790000ac790000ae790000b0790000b2790000
+    m_ExpandedIDs: 0000000090790000927900009479000096790000987900009a7900009c790000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -472,7 +472,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 540
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -518,9 +518,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 22790000
-      m_LastClickedID: 0
-      m_ExpandedIDs: aafaffff
+      m_SelectedIDs: 4e790000
+      m_LastClickedID: 31054
+      m_ExpandedIDs: 18fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -566,10 +566,10 @@ MonoBehaviour:
     m_TextWithWhitespace: "Scene\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 52.5
+    x: 52
     y: 1512
-    width: 1086.5
-    height: 568.5
+    width: 1087
+    height: 569
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -882,7 +882,7 @@ MonoBehaviour:
       containerId: overlay-toolbar__left
       floating: 0
       collapsed: 0
-      displayed: 0
+      displayed: 1
       snapOffset: {x: 48, y: 48}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
@@ -982,9 +982,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -11.389238, y: 30.009062, z: 13.272096}
+    m_Target: {x: -12.947963, y: 6.4681444, z: 1.829759}
     speed: 2
-    m_Value: {x: -11.389238, y: 30.009062, z: 13.272096}
+    m_Value: {x: -12.947963, y: 6.4681444, z: 1.829759}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1030,13 +1030,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.27192342, y: -0.71416533, z: 0.36529383, w: -0.5316051}
+    m_Target: {x: -0.24914816, y: -0.64509046, z: 0.23533382, w: -0.68294096}
     speed: 2
-    m_Value: {x: -0.27192095, y: -0.71415883, z: 0.36529052, w: -0.5316003}
+    m_Value: {x: -0.24914733, y: -0.6450883, z: 0.23533303, w: -0.6829387}
   m_Size:
-    m_Target: 0.08449028
+    m_Target: 0.840773
     speed: 2
-    m_Value: 0.08449028
+    m_Value: 0.840773
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1131,7 +1131,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
