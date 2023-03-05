@@ -5,4 +5,6 @@ GIS data of the region of the game map. Original map data downloaded from [Earth
 - Lower-res data of the surrounding regions, from GMTED2010 dataset.
 - SRTM 1 Arc-Second Global of the whole map has been downloaded [to here](https://drive.google.com/file/d/17IFNsSRH2q_bdlR8HMUqMHFv8lhtbXtj/view?usp=share_link), although is currently unused in-project.
 
+Bathymetry data from [here](https://www.ncei.noaa.gov/maps/bathymetry/).
+
 This data is exported using QGIS into a .raw format for import into Unity.
