@@ -7,7 +7,7 @@ TerrainLayer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Layer_Gyeongju
-  m_DiffuseTexture: {fileID: 2800000, guid: a1c6e299d695f814db050cb94f418c4e, type: 3}
+  m_DiffuseTexture: {fileID: 2800000, guid: 9d232d312f3b1814da50b080bb944a72, type: 3}
   m_NormalMapTexture: {fileID: 0}
   m_MaskMapTexture: {fileID: 0}
   m_TileSize: {x: 100, y: 100}
