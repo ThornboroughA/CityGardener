@@ -1,0 +1,82 @@
+{
+    "name": "InputActions",
+    "maps": [
+        {
+            "name": "BaseKeys",
+            "id": "4e7cebdd-6a90-4753-aabd-14539a0d64dd",
+            "actions": [
+                {
+                    "name": "MainClick",
+                    "type": "Button",
+                    "id": "fc8dd327-372d-4ad2-b583-e257ff5f9647",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "AltClick",
+                    "type": "Button",
+                    "id": "b248afa8-bbea-424a-a993-b1ba0e114b30",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "e5e66505-7581-4bf0-a986-88256cba9180",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MainClick",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "33ce24c9-e215-4ac8-8d6c-33c03f76d7d2",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AltClick",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Raycast",
+            "id": "3b72f007-16d3-4696-8a12-4fb1a53a0a88",
+            "actions": [
+                {
+                    "name": "MousePosition",
+                    "type": "Value",
+                    "id": "d0605cba-2c92-47f6-a680-d2ed1940c54d",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "d749a680-0597-4c64-a5d2-915034110d60",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MousePosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
